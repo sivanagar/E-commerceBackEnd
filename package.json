@@ -1,7 +1,7 @@
 {
-  "name": "module-13-challenge-orm",
+  "name": "e-commercebackend",
   "version": "1.0.0",
-  "description": "",
+  "description": "{\r   \"name\": \"module-13-challenge-orm\",\r   \"version\": \"1.0.0\",\r   \"description\": \"\",\r   \"main\": \"server.js\",\r   \"scripts\": {\r     \"test\": \"echo \\\"Error: no test specified\\\" && exit 1\",\r     \"start\": \"node server.js\",\r     \"watch\": \"nodemon server.js\",\r     \"seed\": \"node seeds/index.js\"\r   },\r   \"repository\": {\r     \"type\": \"git\",\r     \"url\": \"git@work.github.com:coding-boot-camp/module-13-challenge-orm.git\"\r   },\r   \"keywords\": [],\r   \"author\": \"\",\r   \"license\": \"ISC\",\r   \"devDependencies\": {\r     \"nodemon\": \"^2.0.3\"\r   },\r   \"dependencies\": {\r     \"dotenv\": \"^8.2.0\",\r     \"express\": \"^4.17.1\",\r     \"mysql2\": \"^2.1.0\",\r     \"sequelize\": \"^5.21.7\"\r   }\r }",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,18 +11,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@work.github.com:coding-boot-camp/module-13-challenge-orm.git"
+    "url": "git+https://github.com/sivanagar/E-commerceBackEnd.git"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "nodemon": "^2.0.3"
+  "bugs": {
+    "url": "https://github.com/sivanagar/E-commerceBackEnd/issues"
   },
+  "homepage": "https://github.com/sivanagar/E-commerceBackEnd#readme",
   "dependencies": {
-    "dotenv": "^8.2.0",
+    "dotenv": "^10.0.0",
     "express": "^4.17.1",
-    "mysql2": "^2.1.0",
-    "sequelize": "^5.21.7"
+    "mysql2": "^2.3.2",
+    "nodemon": "^2.0.14",
+    "sequelize": "^6.7.0"
   }
 }
