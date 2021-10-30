@@ -77,6 +77,7 @@ router.post('/', (req, res) => {
       // if there's product tags, we need to create pairings to bulk create in the ProductTag model
       if (req.body.tagIds.length) {
         const productTagIdArr = req.body.tagIds.map((tag_id) => {
+          console.log("There are Tags");
           return {
             product_id: product.id,
             tag_id,
@@ -85,6 +86,7 @@ router.post('/', (req, res) => {
         return ProductTag.bulkCreate(productTagIdArr);
       }
       // if no product tags, just respond
+      console.log("product added");
       res.status(200).json(product);
     })
     .then((productTagIds) => res.status(200).json(productTagIds))
@@ -100,7 +102,7 @@ router.put('/:id', (req, res) => {
   Product.update(req.body, {
     where: {
       id: req.params.id,
-    },
+    }
   })
     .then((product) => {
       // find all associated tags from ProductTag
